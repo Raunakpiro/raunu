@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GLOBALSQUARE - AI Company</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172B4D;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: royalblue;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172B4D;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: royalblue;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: royalblue;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #173b9e;
+            transform: translateY(-3px);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 80px 8%;
+            background: #eaf3ff;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: royalblue;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #52647a;
+        }
+
+        .hero img {
+            width: 45%;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 80px 8%;
+        }
+
+        .about img {
+            width: 40%;
+            border-radius: 15px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about h2,
+        .services h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about h2 span {
+            color: royalblue;
+        }
+
+        .about p {
+            color: #52647a;
+        }
+
+        /* Services */
+        .services {
+            text-align: center;
+            padding: 80px 8%;
+            background: #f5f8ff;
+        }
+
+        .service-container {
+            display: flex;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .service-card h3 {
+            color: royalblue;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #52647a;
+        }
+
+        /* What's New */
+        .news {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .news h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .news p {
+            color: #52647a;
+        }
+
+        /* Contact */
+        footer {
+            background: #142c4b;
+            color: white;
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: #d5e4f8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero,
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero img,
+            .about img {
+                width: 100%;
+            }
+
+            .service-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+            GLOBAL<span>SQUARE</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>
+                We Solve <span>Globally.</span>
+            </h1>
+
+            <p>
+                Innovative AI solutions for a smarter tomorrow.
+                Empowering people and businesses through technology.
+            </p>
+
+            <a href="#services" class="btn">
+                Explore Our Solutions →
+            </a>
+        </div>
+
+        <img src="ai-podcast-og.jpg" alt="Artificial Intelligence">
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <img src="ai-hub-hero-animation-color-update.gif"
+             alt="AI Technology">
+
+        <div class="about-content">
+
+            <h2>
+                About <span>GLOBALSQUARE</span>
+            </h2>
+
+            <p>
+                GLOBALSQUARE is an AI company dedicated to
+                building intelligent solutions that help people
+                and businesses grow worldwide.
+            </p>
+
+            <a href="#contact" class="btn">
+                Learn More →
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+
+        <h2>Our Solutions</h2>
+
+        <p>Discover how technology can transform your future.</p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>AI Solutions</h3>
+                <p>
+                    Intelligent AI-powered solutions
+                    designed to simplify everyday tasks.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Smart Technology</h3>
+                <p>
+                    Innovative technologies that help
+                    businesses grow and develop.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Digital Innovation</h3>
+                <p>
+                    Creative digital solutions for
+                    a smarter and better tomorrow.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- What's New -->
+    <section class="news">
+
+        <h2>What's New?</h2>
+
+        <p>
+            Discover new ideas and innovative AI
+            technologies for a better future.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h2>Let's Build the Future.</h2>
+
+        <p>Have a project or an idea? Get in touch with us.</p>
+
+        <p>Email: info@globalsquare.com</p>
+
+        <br>
+
+        <p>© 2026 GLOBALSQUARE. All rights reserved.</p>
+
+    </footer>
+
+</body>
+</html>
